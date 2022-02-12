@@ -74,11 +74,9 @@ public class MainActivity extends AppCompatActivity {
             Button restart_button = (Button) findViewById(R.id.button11);
             restart_button.setEnabled(true);
             restart_button.setVisibility(View.VISIBLE);
-            if(check_all_filled()) {
-
-            }
         }
         croos_move = !croos_move;
+        b.setEnabled(false);
     }
     public void restart(View v){
         Intent intent = getIntent();
