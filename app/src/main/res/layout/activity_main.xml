@@ -59,7 +59,7 @@
         android:onClick="sign"
         android:tag="4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/button:" />
 
     <Button
         android:id="@+id/button6"
