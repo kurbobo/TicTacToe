@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.widget.Button;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -66,6 +68,12 @@ public class MainActivity extends AppCompatActivity {
                     text = "Congratulations! x wins!";
                 } else {
                     text = "Congratulations! o wins!";
+                }
+                int [] ids = {R.id.button, R.id.button2, R.id.button3, R.id.button4, R.id.button5,
+                        R.id.button6, R.id.button7, R.id.button8, R.id.button9};
+                for (int id : ids) {
+                    Button button = (Button) findViewById(id);
+                    button.setEnabled(false);
                 }
             }
             else
